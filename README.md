@@ -1,2 +1,2 @@
-# Hello-World-Java
-To build the basic program that can print the "Hello World" string
+# Java Projects and Programs
+Java programs that are simple and understandable programs 
