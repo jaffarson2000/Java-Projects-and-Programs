@@ -1,6 +1,6 @@
 package mycaptain;
 
-public class fibonnaciwithoutrecursion
+public class fibonacciwithoutrecursion
 {
         public static void main(String args[])
         {
