@@ -1,0 +1,90 @@
+package mycaptain;
+
+import java.util.Scanner;
+public class array
+{
+    public static void main(String[] args)
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.printf("Enter how many rows : ");
+        int rows=s.nextInt();
+        System.out.printf("Enter how many columns : ");
+        int columns =s.nextInt();;
+
+        int ary1 [][]=new int[rows][columns];
+        int ary2[][]=new int[rows][columns];
+
+        System.out.println("Enter the elements in first matrix : ");
+        for(int i=0;i<rows;i++)
+        {
+            for (int j=0;j<columns;j++)
+            {
+                ary1[i][j]=s.nextInt();
+            }
+        }
+        System.out.println("Enter elements in second matrix : ");
+        for(int i=0;i<rows;i++)
+        {
+            for (int j=0;j<columns;j++)
+            {
+                ary2[i][j]=s.nextInt();
+            }
+        }
+        System.out.println("\nFirst matrix : ");
+        for(int i=0;i<rows;i++)
+        {
+            for (int j=0;j<columns;j++)
+            {
+                System.out.printf(ary1[i][j]+" ");
+            }
+            System.out.println();
+        }
+        System.out.println("\nSecond matrix : ");
+        for(int i=0;i<rows;i++)
+        {
+            for (int j=0;j<columns;j++)
+            {
+                System.out.printf(ary2[i][j]+" ");
+            }
+            System.out.println();
+        }
+
+        int add[][]=new int[rows][columns];
+        for (int i=0;i<rows;i++)
+        {
+            for (int j=0;j<columns;j++)
+            {
+                add[i][j]=ary1[i][j]+ary2[i][j];
+            }
+        }
+
+        System.out.println("\nAddition of two matrices : ");
+        for(int i=0;i<rows;i++)
+        {
+            for (int j=0;j<columns;j++)
+            {
+                System.out.printf(add[i][j]+" ");
+            }
+            System.out.println();
+        }
+
+        int mul[][]=new int[rows][columns];
+        for(int i=0;i<rows;i++)
+        {
+            for(int j=0;j<columns;j++)
+            {
+                mul[i][j]=ary1[i][j]*ary2[i][j];
+            }
+        }
+
+        System.out.println("\nMultiplication of two matrices : ");
+        for (int i=0;i<rows;i++)
+        {
+            for(int j=0;j<columns;j++)
+            {
+                System.out.printf(mul[i][j]+" ");
+            }
+            System.out.println();
+        }
+    }
+}
